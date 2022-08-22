@@ -3,4 +3,4 @@ const allowedOrigins = [
   "https://soft-sherbet-8a6fbd.netlify.app",
 ];
 
-module.exports = allowedOrigins;
+export default allowedOrigins;
