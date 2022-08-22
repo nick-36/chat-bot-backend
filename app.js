@@ -1,14 +1,13 @@
 import cors from "cors";
 
 import express from "express";
-
+import corsOptions from "./config/corsOptions.js";
 import authRouter from "./routes/auth.js";
 
-// console.log(dotenv);
 const app = express();
 
 //CORS
-app.use(cors());
+app.use(cors(corsOptions));
 
 app.use(express.json());
 // app.use(express.urlencoded());
